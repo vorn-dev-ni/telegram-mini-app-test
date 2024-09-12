@@ -1,4 +1,3 @@
-import Image from "next/image";
 import UserInfo from "./component/UserInfo";
 
 export default function Home() {
