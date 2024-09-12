@@ -5,9 +5,8 @@ import WebApp from '@twa-dev/sdk'
 const UserInfo = () => {
     const [userInfo, setUserInfo] = useState<typeof WebApp.initDataUnsafe.user>()
     useEffect(() => {
-        console.log(WebApp.initDataUnsafe.user)
-        setUserInfo(userInfo)
-    }, [])
+        setUserInfo(WebApp.initDataUnsafe.user)
+    }, [setUserInfo])
     if (!userInfo) {
         return <div >Fetching ...</div>
     }
