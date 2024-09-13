@@ -4,7 +4,7 @@
 import WebApp from '@twa-dev/sdk'
 import React, { useEffect, useState } from 'react'
 const UserInfo = () => {
-    const [userInfo, setUserInfo] = useState<any>()
+    const [userInfo, setUserInfo] = useState<typeof WebApp.initDataUnsafe.user>()
     useEffect(() => {
         if (typeof window !== 'undefined' && WebApp) {
             // Safely access WebApp API after ensuring window is defined
@@ -20,7 +20,10 @@ const UserInfo = () => {
         <div className='text-center'>
             <p>User telegram information</p>
             <ul>
-                {/* <li>{userInfo?.first_name}</li> */}
+                <li>{userInfo?.first_name}</li>
+                <li>{userInfo?.last_name}</li>
+                <li>{userInfo?.username}</li>
+
             </ul>
         </div>
     )
