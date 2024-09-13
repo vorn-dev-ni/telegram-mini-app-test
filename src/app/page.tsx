@@ -1,3 +1,5 @@
+'use client'; // Make sure this is added at the top to ensure client-side rendering
+
 import UserInfo from "./component/UserInfo";
 
 export default function Home() {
