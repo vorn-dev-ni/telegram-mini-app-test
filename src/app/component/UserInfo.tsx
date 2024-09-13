@@ -1,4 +1,6 @@
-'use client'; // Make sure this is added at the top to ensure client-side rendering
+'use client';
+// Make sure this is added at the top to ensure client-side rendering
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import WebApp from '@twa-dev/sdk'
 import React, { useEffect, useState } from 'react'
 const UserInfo = () => {
