@@ -18,7 +18,7 @@ const UserInfo = () => {
     }
     return (
         <div className='text-center'>
-            <p>User telegram information</p>
+            <p>User telegram information extra</p>
             <ul>
                 <li>{userInfo?.first_name}</li>
                 <li>{userInfo?.last_name}</li>
